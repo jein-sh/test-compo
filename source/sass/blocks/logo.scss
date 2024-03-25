@@ -1,0 +1,27 @@
+.logo {
+  display: flex;
+  align-items: center;
+  width: 206px;
+  height: 40px;
+
+  &--gray {
+    width: 124px;
+    height: 24px;
+    fill: $color-gray-2;
+  }
+
+  &--m {
+    width: 144px;
+    height: 28px;
+  }
+
+  &--sm {
+    width: 124px;
+    height: 24px;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}

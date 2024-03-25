@@ -1,0 +1,71 @@
+.header {
+  &__top {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px 16px 24px;
+
+    & > .btn:not(.header__menu) {
+      margin-right: 24px;
+
+      @include vp-1279 {
+        display: none;
+      }
+    }
+
+    @include vp-899 {
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    margin-right: 24px;
+  }
+
+  &__menu {
+    margin-right: 24px;
+
+    @include vp-899 {
+      margin-right: 0;
+    }
+  }
+
+  &__search {
+    flex: 1;
+    margin-right: 32px;
+
+    @include vp-899 {
+      display: none;
+    }
+  }
+
+  &__bell.btn {
+    margin-right: 46px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      right: -24px;
+      top: 0;
+
+      content: "";
+      display: block;
+      width: 1px;
+      height: 100%;
+      background-color: $color-light-3;
+    }
+  }
+
+  &__bottom {
+    padding: 11px 24px;
+
+    @include vp-899 {
+      display: none;
+    }
+  }
+
+  .user {
+    @include vp-899 {
+      display: none;
+    }
+  }
+}

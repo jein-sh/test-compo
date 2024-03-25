@@ -1,0 +1,29 @@
+.user {
+  display: flex;
+  align-items: center;
+
+  &__avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 16px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__name {
+    font-family: $ff-gothampro;
+    font-size: 14px;
+    line-height: 16px;
+    margin-right: 16px;
+  }
+
+  .btn svg{
+    transform: rotate(-90deg);
+  }
+}
